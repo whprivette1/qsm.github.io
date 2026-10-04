@@ -6,3 +6,52 @@
     margin: 0 auto;
 }
 
+.horizontal_line {
+            width: 90%;
+            height: 5px;
+            border-top: 5px dotted black;
+            line-height: 80%;
+        }
+
+.line {
+            border-bottom: 5px solid red;
+            margin-top: 5px;
+            width: 90%;
+        }
+
+hr {
+  border: 1px solid transparent;
+  height: 1em;
+  width: 15%;
+  position: relative;
+}
+
+hr:before, hr:after {
+  content: ' V ';
+  color: #fff;
+  font-family: Montez;
+  position: absolute;
+}
+
+hr:before {
+  left: 0;    
+  text-shadow: -1px 0px #ccc;
+  -webkit-transform: scaleX(15) scaleY(2) rotate(-90deg);
+   -moz-transform: scaleX(15) scaleY(2) rotate(-90deg);
+  -ms-transform: scaleX(15) scaleY(2) rotate(-90deg);
+  -o-transform: scaleX(15) scaleY(2) rotate(-90deg);
+  transform: scaleX(15) scaleY(2) rotate(-90deg);
+}
+hr:after {
+  right: 0;
+    text-shadow: 1px 0px #ccc;
+  -webkit-transform: scaleX(15) scaleY(2) rotate(90deg);
+   -moz-transform: scaleX(15) scaleY(2) rotate(90deg);
+  -ms-transform: scaleX(15) scaleY(2) rotate(90deg);
+  -o-transform: scaleX(15) scaleY(2) rotate(90deg);
+  transform: scaleX(15) scaleY(2) rotate(90deg);
+}
+
+body{
+    background-color:lightgrey;
+}
